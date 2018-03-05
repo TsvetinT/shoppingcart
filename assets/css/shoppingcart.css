@@ -147,13 +147,41 @@ h3 {
   display: flex;
   justify-content: space-between;
   background-color: #acb9c5;
-  margin: 25px;
+  margin-top: 25px;
+  padding: 10px;
 }
-
+.shopbag-column {
+  width: 25%;
+}
+.shopbag-column p {
+  text-align: center;
+}
 .emptybag {
   text-align: center;
+
 }
 
 .emptybtn {
   cursor: pointer;
+}
+
+/* Shopping Cart */
+.selected-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+.selected-item p {
+  text-align: center;
+}
+.selected-item img {
+  max-width: 150px;
+  width: 100%;
+}
+.hidden {
+  display:none !important ;
 }

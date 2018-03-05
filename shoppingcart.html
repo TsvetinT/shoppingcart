@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="shoppingcart.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/shoppingcart.css">
   <title>Shopping Cart</title>
 </head>
 
@@ -79,8 +79,8 @@
 
         <h2>Nice One</h2>
 
-        <img class="imgprop" src="img1.jpg">
-        <button id="cart-btn" class="btn-img">Add to Cart</button>
+        <img class="imgprop" src="assets/img1.jpg">
+        <button data-product-id="01" class="add-to-cart btn-img">Add to Cart</button>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
@@ -89,8 +89,8 @@
 
       <div class="shirtsposition">
         <h2>Better One</h2>
-        <img class="imgprop" src="img2.jpg">
-        <button id="cart-btn" class="btn-img">Add to Cart</button>
+        <img class="imgprop" src="assets/img2.jpg">
+        <button data-product-id="02" class="add-to-cart btn-img">Add to Cart</button>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
@@ -98,8 +98,8 @@
       </div>
       <div class="shirtsposition">
         <h2>The Best</h2>
-        <img class="imgprop" src="img3.jpg">
-        <button id="cart-btn" class="btn-img">Add to Cart</button>
+        <img class="imgprop" src="assets/img3.jpg">
+        <button class="add-to-cart btn-img">Add to Cart</button>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
@@ -114,7 +114,7 @@
     <div>
       <div>
         <h2>Nice One</h2>
-        <img class="imgprop" src="img4.jpg">
+        <img class="imgprop" src="assets/img4.jpg">
         <button class="btn-img">Add to Cart</button>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -124,7 +124,7 @@
       </div>
       <div>
         <h2>Nice One</h2>
-        <img class="imgprop" src="img5.jpg">
+        <img class="imgprop" src="assets/img5.jpg">
         <button class="btn-img">Add to Cart</button>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -133,7 +133,7 @@
       </div>
       <div>
         <h2>Nice One</h2>
-        <img class="imgprop" src="img6.jpg">
+        <img class="imgprop" src="assets/img6.jpg">
         <button class="btn-img">Add to Cart</button>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -141,29 +141,46 @@
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
-    <div id="accesorios"> class="accesection">
+    <div id="accesorios">
       <a href="accesorios"></a>Accesori
       <span style='color: #245ca5'>o</span>
       <span style='color: #ec6d5f'>s</span>
     </div>
-    <h1>Coming Soon</h1>
-    <img class="imgprop" src="img7.jpg">
-    <img class="imgprop" src="img8.jpg">
-    <img class="imgprop" src="img9.jpg">
-    <!--  SHOPPING BAG (in Progress) -->
-    <div id="shoppingbag" class="shopbag">
-      <a href="shoppingbag"></a>
-      <p>ITEM</p>
-      <p>QTY</p>
-      <p>PRICE</p>
+    <section>
+      <h1>Coming Soon</h1>
+      <div class="coming-soon">
+        <img class="imgprop" src="assets/img7.jpg">
+        <img class="imgprop" src="assets/img8.jpg">
+        <img class="imgprop" src="assets/img9.jpg">
+      </div>
+    </section>
+    <!--  SHOPPING BAG (inProgress) -->
+    <div id="shoppingbag">
+      <div class="shopbag">
+        <div class="shopbag-column">
+          <p>Item</p>
+        </div>
+        <div class="shopbag-column">
+          <p>Name</p>
+        </div>
+        <div class="shopbag-column">
+          <p>Price</p>
+        </div>
+        <div class="shopbag-column">
+          <p>QTY</p>
+        </div>
+      </div>
     </div>
-    <div class="emptybag">
+
+    <div id="empty-bag" class="emptybag">
       <p>Your Shopping Bag is Empty</p>
       <a href="#goback">
         <button class="emptybtn">Continue Shopping</button>
       </a>
     </div>
   </main>
+  <script src="assets/js/shoppingcart.js"></script>
+
 </body>
 
 </html>
